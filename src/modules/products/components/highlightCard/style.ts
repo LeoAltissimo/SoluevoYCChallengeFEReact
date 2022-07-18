@@ -83,7 +83,7 @@ export const Text = styled(motion.h1).attrs({
   animate: "show",
 })<IText>`
   position: absolute;
-  top: 50%;
+  top: 50%; 
   left: 24px;
   width: 60%;
 
