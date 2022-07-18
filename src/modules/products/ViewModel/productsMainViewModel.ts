@@ -9,9 +9,11 @@ const ProductsMainViewModel = function( initialList: Array<Product>) {
   const dispatch = useDispatch();
   const { productsList } = useSelector((store: IStore) => store.products);
 
-  useEffect(() => {
-    dispatch(updateProductList(initialList));
-  }, []);
+    useEffect(() => {
+      if (productsList.length === 0) {
+        dispatch(updateProductList(initialList));
+      }
+    }, []);
 
   const handleFavoriteAction = (product: Product) => {   
     if (product.favorite) {
