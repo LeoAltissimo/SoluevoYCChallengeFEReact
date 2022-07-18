@@ -6,7 +6,7 @@ interface IIconButton {
   text?: string,
   active?: boolean,
   iconActive?: string,
-  action: () => null,
+  action: () => any,
 }
 
 const IconButton = function(props: IIconButton) {

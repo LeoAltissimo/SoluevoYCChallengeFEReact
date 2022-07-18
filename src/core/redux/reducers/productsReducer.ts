@@ -2,11 +2,12 @@ import Product from '@core/entities/product';
 import { IAction } from '../store';
 
 export interface IproductReducer {
-  productsList: Array<Product>
+  productsList: Array<Product>,
+  favoriteList: Array<Product>,
 }
 
 const initialState = {
-  productsList: []
+  productsList: [],
 };
 
 const productsReducer = (state = initialState, action: IAction) => {

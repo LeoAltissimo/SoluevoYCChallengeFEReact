@@ -1,25 +1,44 @@
 import Product from "@core/entities/product";
-import { Dispatch } from "redux";
+
+const findInProductList = (product: Product, list: Array<Product>) => {
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].id === product.id) {
+      return i;
+    }
+  }
+
+  return -1;
+}
 
 export const updateProductList = (newList: Array<Product>) => ({
   type: "PRODUCTS_UPDATE_LIST",
-  paylod: newList,
-}) ;
+  payload: newList,
+});
 
 export const removeFavorite = (pToRemove: Product, list: Array<Product>) => {
-  for (let i = 0; i < list.length; i++) {
-    if (list[i].id === pToRemove.id) {
-      return (dispatch: Dispatch) => dispatch(updateProductList(list.splice(i, 1)));
-    }
+  let productIndex = findInProductList(pToRemove, list);
+
+  if (productIndex !== -1) {
+    list[productIndex].favorite = false;
+    return ({
+      type: "PRODUCTS_UPDATE_LIST",
+      payload: list,
+    });
   }
+
+  return ({ type: null });
 }
 
 export const addFavorite = (pToAdd: Product, list: Array<Product>) => {
-  for (let i = 0; i < list.length; i++) {
-    if (list[i].id === pToAdd.id) {
-      return;
-    }
+  let productIndex = findInProductList(pToAdd, list);
+
+  if (productIndex !== -1) {
+    list[productIndex].favorite = true;
+    return ({
+      type: "PRODUCTS_UPDATE_LIST",
+      payload: list,
+    });
   }
-  list.push(pToAdd);
-  return (dispatch: Dispatch) => dispatch(updateProductList(list));
+
+  return ({ type: null });
 }

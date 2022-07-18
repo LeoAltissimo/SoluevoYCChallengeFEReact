@@ -20,7 +20,7 @@ export const LogoImage = styled.img.attrs({
   src: '/logo.svg',
   alt: 'Logo Brutus Trucks'
 })`
-
+  cursor: pointer;
 `;
 
 export const FavoriteButton = styled(IconButton).attrs({

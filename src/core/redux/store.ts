@@ -1,9 +1,7 @@
-import { createStore, applyMiddleware } from 'redux';
-import { persistStore, persistReducer } from 'redux-persist';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import storage from 'redux-persist/lib/storage';
-import thunk from 'redux-thunk';
-import logger from 'redux-logger';
+import "regenerator-runtime/runtime";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import logger from "redux-logger";
 import products, { IproductReducer } from './reducers/productsReducer';
 
 interface IAction {
@@ -15,14 +13,10 @@ interface IStore {
   products: IproductReducer
 }
 
-const persistConfig = {
-    key: 'products',
-    storage: storage,
-    whitelist: ['products']
- };
-const presistedReducer = persistReducer(persistConfig, products );
-const store = createStore(presistedReducer, 
-composeWithDevTools(applyMiddleware(thunk, logger)));
-const persistor = persistStore(store);
-export { persistor, store };
 export type { IAction, IStore };
+export default createStore(
+    combineReducers({
+      products,
+    }),
+    applyMiddleware(thunk, logger)
+  );

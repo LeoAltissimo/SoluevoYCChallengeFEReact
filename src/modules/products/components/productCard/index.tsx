@@ -20,10 +20,10 @@ const strings = {
 interface IProductCard {
   title: string
   image: string
-  originalPrice?: number
+  originalPrice?: number | null
   finalPrice: number
   isFavorited: boolean
-  favoriteAction: () => null
+  favoriteAction: () => any
 }
 
 const ProductCard = function({

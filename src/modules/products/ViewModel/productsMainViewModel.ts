@@ -1,12 +1,19 @@
-import Product from "@core/entities/product";
-import { IStore } from "@core/redux/store";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-const ProductsMainViewModel = function() {
+import Product from "@core/entities/product";
+import { addFavorite, removeFavorite, updateProductList } from "@core/redux/actions/productsActions";
+import { IStore } from "@core/redux/store";
+
+const ProductsMainViewModel = function( initialList: Array<Product>) {
   const dispatch = useDispatch();
-  const [productsList] = useSelector((store: IStore) => store.products);
-  
-  const handleFavoriteAction = (product: Product) => {
+  const { productsList } = useSelector((store: IStore) => store.products);
+
+  useEffect(() => {
+    dispatch(updateProductList(initialList));
+  }, []);
+
+  const handleFavoriteAction = (product: Product) => {   
     if (product.favorite) {
       dispatch(removeFavorite(product, productsList));
     } else {
@@ -16,6 +23,7 @@ const ProductsMainViewModel = function() {
 
   return {
     handleFavoriteAction,
+    productsList,
   };
 };
 

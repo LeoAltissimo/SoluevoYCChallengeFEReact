@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/google-font-display */
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import { ServerStyleSheet } from 'styled-components';
 

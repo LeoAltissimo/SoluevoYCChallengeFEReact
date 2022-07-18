@@ -95,7 +95,7 @@ export const Text = styled(motion.h1).attrs({
 
   color: ${({ textColor }) => textColor || colors.contrast};
 
-  @media (max-width: ${breakPoints.xl}px) {
+  @media (max-width: ${breakPoints.md}px) {
     top: 60%;
     width: 80%;
     font-size: ${textSizes.level6}px;

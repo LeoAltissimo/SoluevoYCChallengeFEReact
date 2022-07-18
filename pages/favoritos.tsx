@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import SystemProvider from '@core/providers/systemProvider';
 import PageSkeleton from '@core/providers/pageSkeleton';
-import ProductsMainView from '@modules/products/Views/productsMainVew';
+import ProductFavoriteView from '@modules/products/Views/productsFavoritesView';
 
 import devData from '@core/utils/devData.json';
 import Product, { IProduct } from '@core/entities/product';
@@ -35,7 +35,7 @@ const Home: NextPage<IStaticData> = ({ productList }) => {
 
       <SystemProvider>
         <PageSkeleton>
-          <ProductsMainView productList={productListFormat} />
+          <ProductFavoriteView />
         </PageSkeleton>
       </SystemProvider>
     </>
