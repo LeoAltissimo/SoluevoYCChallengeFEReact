@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { spaces, breakPoints } from '@core/uiTheme/constants';
+import { spaces, breakPoints, textSizes, colors } from '@core/uiTheme/constants';
 
 const categoryAmin = {
   hidden: { opacity: 0, y: 50 },
@@ -43,6 +43,19 @@ export const CategoryContainer = styled(motion.div).attrs({
   @media (max-width: ${breakPoints.sm}px) {
     width: 100vw;
   }
+`;
+
+export const SectionTitle = styled(motion.h2).attrs({
+  variants: productAmin,
+  initial: "hidden",
+  animate: "show",
+})`
+  font-weight: 700;
+  font-size: ${textSizes.level7}px;
+  color: ${colors.primary};
+  width: 45%;
+  margin-top: ${spaces.level8}px;
+  margin-bottom: 0;
 `;
 
 export const ProductsContainer = styled(motion.div).attrs({

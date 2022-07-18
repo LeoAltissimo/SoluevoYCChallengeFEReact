@@ -3,7 +3,15 @@ import ProductCard from "@modules/products/components/productCard";
 import React from "react";
 import HighlightCard from "../../components/highlightCard";
 
-import { CategoryContainer, ProductsContainer } from "./style";
+import {
+  CategoryContainer,
+  ProductsContainer,
+  SectionTitle,
+} from "./style";
+
+const strings = {
+  mostvisited: 'Mais Procurados',
+}
 
 const ProductsMainView = function () {
   return (
@@ -33,58 +41,59 @@ const ProductsMainView = function () {
         />
       </CategoryContainer>
 
+      <SectionTitle>{strings.mostvisited}</SectionTitle>
       <ProductsContainer>
         <ProductCard
-          title="Falois de LED Hilux"
+          title="Farois de LED Hilux"
           image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category2.png"
           finalPrice={1499.0}
           isFavorited
           favoriteAction={() => null}
         />
         <ProductCard
-          title="Falois de LED Hilux"
-          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category2.png"
+          title="Farois de LED Hilux"
+          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%283%29.png"
           originalPrice={2499.0}
           finalPrice={1499.0}
           isFavorited
           favoriteAction={() => null}
         />
         <ProductCard
-          title="Falois de LED Hilux"
-          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category2.png"
+          title="Farois de LED Hilux"
+          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%284%29.png"
           finalPrice={1499.0}
           isFavorited
           favoriteAction={() => null}
         />
         <ProductCard
-          title="Falois de LED Hilux"
-          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category2.png"
+          title="Farois de LED Hilux"
+          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%285%29.png"
           originalPrice={2499.0}
           finalPrice={1499.0}
           isFavorited
           favoriteAction={() => null}
         />
         <ProductCard
-          title="Falois de LED Hilux"
-          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category2.png"
+          title="Farois de LED Hilux"
+          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%286%29.png"
           finalPrice={1499.0}
-          isFavorited
+          isFavorited={false}
           favoriteAction={() => null}
         />
         <ProductCard
-          title="Falois de LED Hilux"
-          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category2.png"
+          title="Farois de LED Hilux"
+          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%287%29.png"
           originalPrice={2499.0}
           finalPrice={1499.0}
-          isFavorited
+          isFavorited={false}
           favoriteAction={() => null}
         />
         <ProductCard
-          title="Falois de LED Hilux"
+          title="Farois de LED Hilux"
           image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category2.png"
           originalPrice={2499.0}
           finalPrice={1499.0}
-          isFavorited
+          isFavorited={false}
           favoriteAction={() => null}
         />
       </ProductsContainer>

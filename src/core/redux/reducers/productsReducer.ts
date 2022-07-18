@@ -1,15 +1,20 @@
+import Product from '@core/entities/product';
 import { IAction } from '../store';
 
+export interface IproductReducer {
+  productsList: Array<Product>
+}
+
 const initialState = {
-  products: []
+  productsList: []
 };
 
 const productsReducer = (state = initialState, action: IAction) => {
   switch (action.type) {
-    case 'SET_PRODUCTS_LIST':
+    case 'PRODUCTS_UPDATE_LIST':
       return {
         ...state,
-        products: action.payload,
+        productsList: action.payload,
       };
     default: return state;
   }

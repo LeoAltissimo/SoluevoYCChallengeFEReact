@@ -40,7 +40,7 @@ export const CoverImage = styled.div<ICoverImage>`
 
 export const FavoriteButton = styled(IconButton).attrs({
   icon: '/icons/heart-icon.svg',
-  activeIcon: '/icons/heart-icon-full.svg',
+  iconActive: '/icons/heart-icon-full.svg',
 })`
   position: absolute;
   top: ${spaces.level1}px;
