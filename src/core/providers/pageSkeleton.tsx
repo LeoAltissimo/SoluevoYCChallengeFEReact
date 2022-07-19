@@ -6,15 +6,15 @@ import {
 } from '../uiTheme/global';
 import Header from '../containers/header';
 
-
 interface IPageSkeleton {
   children: React.ReactNode,
+  noFavorites?: boolean,
 }
 
-const PageSkeleton = function({ children }: IPageSkeleton) {
+const PageSkeleton = function({ children, noFavorites }: IPageSkeleton) {
   return (
     <MainContainer>
-      <Header />
+      <Header noFavorites={noFavorites} />
       <LimitantContainer>
           {children}
       </LimitantContainer>

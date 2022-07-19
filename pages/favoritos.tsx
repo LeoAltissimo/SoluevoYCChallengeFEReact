@@ -34,7 +34,7 @@ const Home: NextPage<IStaticData> = ({ productList }) => {
       </Head>
 
       <SystemProvider>
-        <PageSkeleton>
+        <PageSkeleton noFavorites>
           <ProductFavoriteView />
         </PageSkeleton>
       </SystemProvider>
