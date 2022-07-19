@@ -36,7 +36,7 @@ const ProductsMainView = function ({ productList }: IProductsMainView) {
           image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category1.png"
         />
         <CardCategory
-          title="Farois e luzes"
+          title="Faróis e luzes"
           image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category2.png"
         />
         <CardCategory
