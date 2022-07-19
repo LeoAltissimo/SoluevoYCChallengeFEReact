@@ -1,3 +1,5 @@
+import Category from "@core/entities/category";
+import Highlight from "@core/entities/highlight";
 import Product from "@core/entities/product";
 import CardCategory from "@modules/products/components/categoryCard";
 import ProductCard from "@modules/products/components/productCard";
@@ -17,36 +19,36 @@ const strings = {
 
 interface IProductsMainView {
   productList: Array<Product>
+  categoryList: Array<Category>
+  highlight: Highlight
 }
 
-const ProductsMainView = function ({ productList }: IProductsMainView) {
-  const { productsList, handleFavoriteAction } = ProductsMainViewModel(productList);
+const ProductsMainView = function ({
+  productList,
+  categoryList,
+  highlight,
+}: IProductsMainView) {
+  const {
+    productsList,
+    handleFavoriteAction,
+  } = ProductsMainViewModel(productList);
 
   return (
     <>
       <HighlightCard
-        image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/highlight1.jpg"
-        text="SUA AVENTURA OFF-ROAD COMEÇA AQUI!"
-        neeShadow
+        image={highlight.image ?? ''}
+        text={highlight.text ?? ''}
+        needShadow={highlight.needShadow}
       />
 
       <CategoryContainer>
-        <CardCategory
-          title="Rodas e Pneus"
-          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category1.png"
-        />
-        <CardCategory
-          title="Faróis e luzes"
-          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category2.png"
-        />
-        <CardCategory
-          title="Opcionais"
-          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category3.png"
-        />
-        <CardCategory
-          title="Campers"
-          image="https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category4.png"
-        />
+        {categoryList.map((category) => (
+          <CardCategory
+            key={category.title}
+            title={category.title ?? ''}
+            image={category.image ?? ''}
+          />
+        ))}
       </CategoryContainer>
 
       <SectionTitle>{strings.mostvisited}</SectionTitle>

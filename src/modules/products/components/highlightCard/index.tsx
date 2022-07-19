@@ -9,7 +9,7 @@ interface IHighlightCard {
   text: string
   textColor?: string
   image: string
-  neeShadow?: boolean
+  needShadow?: boolean
   action?: () => null
 }
 
@@ -17,12 +17,12 @@ const HighlightCard = function({
   text,
   textColor,
   image,
-  neeShadow,
+  needShadow,
   action,
 }: IHighlightCard) {
   return (
     <Container bkImage={image} onClick={action}>
-      {neeShadow && <ShadowOverLay />}
+      {needShadow && <ShadowOverLay />}
       <Text textColor={textColor}>
         {text}
       </Text>
