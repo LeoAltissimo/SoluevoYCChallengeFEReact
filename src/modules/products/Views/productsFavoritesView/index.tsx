@@ -5,10 +5,12 @@ import React from "react";
 import {
   ProductsContainer,
   SectionTitle,
+  EmptyListMessage,
 } from "./style";
 
 const strings = {
   mostvisited: 'Favoritos',
+  empyList: 'Nehum Favorito adicionado',
 };
 
 const ProductsMainView = function () {
@@ -17,6 +19,11 @@ const ProductsMainView = function () {
   return (
     <>
       <SectionTitle>{strings.mostvisited}</SectionTitle>
+
+      {productsList.length === 0 && (
+        <EmptyListMessage>{strings.empyList}</EmptyListMessage>
+      )}
+
       <ProductsContainer>
         {productsList.map((productItem) => (
           <ProductCard

@@ -11,6 +11,15 @@ const productAmin = {
   }
 }
 
+const emptyAmin = {
+  hidden: { opacity: 0, y: 50 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {delay: 0.5, duration: 0.7 }
+  }
+}
+
 export const SectionTitle = styled(motion.h2).attrs({
   variants: productAmin,
   initial: "hidden",
@@ -47,3 +56,15 @@ export const ProductsContainer = styled(motion.div).attrs({
     gap: 0px ${spaces.level4}px; 
   }
 `;
+
+export const EmptyListMessage = styled(motion.h2).attrs({
+  variants: emptyAmin,
+  initial: "hidden",
+  animate: "show",
+})`
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: center;
+  margin: 124px 0;
+`
