@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1",
+    "name": "Roda HD titanium 20\"",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%281%29.png",
+    "listPrice": 2068,
+    "salePrice": 1999,
+    "favorite": false
+  },
+  {
+    "id": "2",
+    "name": "Faróis de xenon S10",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%282%29.png",
+    "listPrice": null,
+    "salePrice": 788.99,
+    "favorite": false
+  },
+  {
+    "id": "3",
+    "name": "Santantônio S10",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%283%29.png",
+    "listPrice": null,
+    "salePrice": 358.99,
+    "favorite": false
+  },
+  {
+    "id": "4",
+    "name": "Faróis de LED Hilux 2022",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%284%29.png",
+    "listPrice": 1030.99,
+    "salePrice": 958.99,
+    "favorite": false
+  },
+  {
+    "id": "5",
+    "name": "Santantônio Hilux",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%285%29.png",
+    "listPrice": 499.99,
+    "salePrice": 450.99,
+    "favorite": false
+  },
+  {
+    "id": "6",
+    "name": "Roda Zeus extreme Line 21\"",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%286%29.png",
+    "listPrice": 2068,
+    "salePrice": 1999,
+    "favorite": false
+  },
+  {
+    "id": "7",
+    "name": "Faróis de LED Ranger 2022",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%287%29.png",
+    "listPrice": 1030.99,
+    "salePrice": 958.99,
+    "favorite": false
+  },
+  {
+    "id": "8",
+    "name": "Santantônio Hilux 2019",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%288%29.png",
+    "listPrice": 499.99,
+    "salePrice": 450.99,
+    "favorite": false
+  },
+  {
+    "id": "9",
+    "name": "Santantônio Ranger 2019",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%289%29.png",
+    "listPrice": 499.99,
+    "salePrice": 450.99,
+    "favorite": false
+  },
+  {
+    "id": "10",
+    "name": "Grade Ranger 2022",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%2810%29.png",
+    "listPrice": 799.99,
+    "salePrice": 450.99,
+    "favorite": false
+  },
+  {
+    "id": "11",
+    "name": "Faróis de LED Ranger custom",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%2811%29.png",
+    "listPrice": null,
+    "salePrice": 950.99,
+    "favorite": false
+  },
+  {
+    "id": "12",
+    "name": "Camper Freelife (novo)",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%2812%29.png",
+    "listPrice": 199999.99,
+    "salePrice": 180000.00,
+    "favorite": false
+  },
+  {
+    "id": "13",
+    "name": "Roda XF Lux Line 22\"",
+    "imageURL": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/products/produto%20%2813%29.png",
+    "listPrice": 2068,
+    "salePrice": 1999,
+    "favorite": false
+  }
+]

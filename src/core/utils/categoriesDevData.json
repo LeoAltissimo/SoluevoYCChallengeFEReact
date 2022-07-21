@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Rodas e Pneus",
+    "image": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category1.png",
+    "destination": "/"
+  },
+  {
+    "title": "Faróis e luzes",
+    "image": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category2.png",
+    "destination": "/"
+  },
+  {
+    "title": "Opcionais",
+    "image": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category3.png",
+    "destination": "/"
+  },
+  {
+    "title": "Campers",
+    "image": "https://savecoinfiles.nyc3.cdn.digitaloceanspaces.com/misc/soluevo/category4.png",
+    "destination": "/"
+  }
+]
